@@ -1,4 +1,3 @@
-# exoplanets_ar.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Exoplanets Experience</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/AR-js-org/AR.js/3.3.2/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar.js"></script>
     <style>
         body { margin: 0; }
         canvas { display: none; }
@@ -16,26 +15,32 @@
     <a-scene embedded arjs>
         <!-- Marker for TRAPPIST-1e -->
         <a-marker preset="hiro">
-            <a-image src="https://upload.wikimedia.org/wikipedia/commons/9/99/TRAPPIST-1e_artistic_rendering.jpg" 
+            <a-image src="https://images.immediate.co.uk/production/volatile/sites/3/2020/06/GettyImages-1200812247-9cb02f2.jpg" 
                      scale="2 2 2" 
                      position="0 0 0">
             </a-image>
+            <a-text value="TRAPPIST-1e" position="0 1.5 0" scale="1 1 1" color="#FFFFFF"></a-text>
+            <a-text value="40 light years away" position="0 0.8 0" scale="1 1 1" color="#FFFFFF"></a-text>
         </a-marker>
 
         <!-- Marker for Proxima Centauri b -->
         <a-marker preset="kanji">
-            <a-image src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Proxima_Centauri_b.png" 
+            <a-image src="https://cdn.mos.cms.futurecdn.net/cBRbG8de8ybLDGV3Z7n7AE-1200-80.jpg" 
                      scale="2 2 2" 
                      position="0 0 0">
             </a-image>
+            <a-text value="Proxima Centauri b" position="0 1.5 0" scale="1 1 1" color="#FFFFFF"></a-text>
+            <a-text value="4.24 light years away" position="0 0.8 0" scale="1 1 1" color="#FFFFFF"></a-text>
         </a-marker>
 
         <!-- Marker for Kepler-442b -->
         <a-marker preset="data-color">
-            <a-image src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Kepler-442b.png" 
+            <a-image src="https://cdn.mos.cms.futurecdn.net/S9g3qUFKu4jb8HDLsPwnLF-1200-80.jpg" 
                      scale="2 2 2" 
                      position="0 0 0">
             </a-image>
+            <a-text value="Kepler-442b" position="0 1.5 0" scale="1 1 1" color="#FFFFFF"></a-text>
+            <a-text value="1,200 light years away" position="0 0.8 0" scale="1 1 1" color="#FFFFFF"></a-text>
         </a-marker>
 
         <a-entity camera></a-entity>
